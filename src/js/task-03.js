@@ -1,20 +1,14 @@
-const ingredientPickerOptions = [
-  "Potatoes",
-  "Mushrooms",
-  "Garlic",
-  "Tomatos",
-  "Herbs",
-  "Condiments",
-];
+const input = document.querySelector("#name-input");
+const nameOutput = document.querySelector("#name-output");
 
-const ingredientListEl = document.querySelector("#ingredients");
+input.addEventListener("input", onInputChange);
 
-const ingredientElements = ingredientPickerOptions.map((option) => {
-  const listItemEl = document.createElement("li");
-  listItemEl.textContent = option;
-  listItemEl.classList.add("item");
+function onInputChange(event) {
+  const inputValue = event.currentTarget.value.trim();
 
-  return listItemEl;
-});
-
-ingredientListEl.append(...ingredientElements);
+  if (inputValue === "") {
+    nameOutput.textContent = "Anonymous";
+  } else {
+    nameOutput.textContent = inputValue;
+  }
+}
