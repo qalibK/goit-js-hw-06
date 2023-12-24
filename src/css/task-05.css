@@ -1,0 +1,7 @@
+body {
+  transition: background-color 1s;
+}
+
+.color {
+  color: rgb(68, 68, 68);
+}

@@ -9,7 +9,6 @@ categoryItemsEl.forEach((categoryItem) => {
 
   const categoryElement = categoryItem.querySelectorAll("ul > li");
 
-  console.log(`
-  Category: ${categoryTitle}   
-  Elements: ${categoryElement.length}`);
+  console.log(`Category: ${categoryTitle}`);
+  console.log(`Elements: ${ categoryElement.length }`);
 });

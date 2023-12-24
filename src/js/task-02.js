@@ -25,70 +25,10 @@ const images = [
   },
 ];
 
-// const galleryContainerEl = document.querySelector("ul.gallery");
-
-// const galleryMarkupEl = images
-//   .map(
-//     (image) => `
-//   <li>
-//     <img src="${image.url}" alt="${image.alt}">
-//   </li>
-// `
-//   )
-//   .join("");
-
-// galleryContainerEl.insertAdjacentHTML("beforeend", galleryMarkupEl);
-
-// --------------------------------------
-
-
-// const galleryElements = [];
-
-// const galleryContainerEl = document.querySelector("ul.gallery");
-
-// for (let i = 0; i < images.length; i += 1) {
-//   const image = images[i];
-
-//   const galleryItemEl = document.createElement('li');
-//   const imageEl = document.createElement('img');
-//   imageEl.alt = image.alt;
-//   imageEl.src = image.url;
-
-//   galleryItemEl.append(imageEl);
-
-//   galleryElements.push(galleryItemEl);
-// }
-
-// galleryContainerEl.append(...galleryElements);
-
-
-
-// --------------------------------------
-
-
-
-// const galleryContainerEl = document.querySelector("ul.gallery");
-
-// const galleryElements = images.map((image) => {
-//   const galleryItemEl = document.createElement("li");
-//   const imageEl = document.createElement("img");
-//   imageEl.alt = image.alt;
-//   imageEl.src = image.url;
-
-//   galleryItemEl.append(imageEl);
-
-//   return galleryItemEl;
-// });
-
-// galleryContainerEl.append(...galleryElements);
-
-
-// --------------------------------------
-
 const galleryContainerEl = document.querySelector("ul.gallery");
 
-const makeGallery = images => {
-  return images.map(image => {
+const makeGallery = (images) => {
+  return images.map((image) => {
     const galleryItemEl = document.createElement("li");
     const imageEl = document.createElement("img");
     imageEl.alt = image.alt;

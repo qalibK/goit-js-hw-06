@@ -1,0 +1,12 @@
+#boxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+}
+
+.box {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}

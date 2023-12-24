@@ -1,6 +1,4 @@
 const form = document.querySelector(".login-form");
-const email = form.elements["email"].value.trim();
-const password = form.elements["password"].value.trim();
 
 form.addEventListener("submit", onFormSubmit);
 
@@ -14,18 +12,17 @@ function onFormSubmit(event) {
   for (var i = 0; i < inputs.length; i++) {
     if (inputs[i].value === "") {
       alert("Please fill in all fields");
+      return;
     }
   }
 
-  formData.forEach((email, password) => {
-    const formEmail = email.trim();
-    const formPassword = password.trim();
-    console.log("Key", formEmail);
-    console.log("Value", formPassword);
-    // const elements = [];
-    // elements.push(formEmail, formPassword);
-    // console.log(elements);
+  const formValues = {};
+
+  formData.forEach((value, key) => {
+    formValues[key] = value.trim();
   });
+
+  console.log("Form Values: ", formValues);
 
   resetForm();
 }
