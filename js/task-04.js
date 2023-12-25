@@ -30,3 +30,15 @@ function onFormSubmit(event) {
 function resetForm() {
   form.reset();
 }
+
+const inputEl = document.querySelectorAll(".form-input");
+
+inputEl.forEach(function (element) {
+  element.addEventListener("focus", function onInputFocus(event) {
+    element.setAttribute("placeholder", "Type area");
+  }),
+    element.addEventListener("blur", function onInputBlur(event) {
+      element.removeAttribute("placeholder");
+    });
+});
+

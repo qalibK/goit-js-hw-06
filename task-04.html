@@ -6,21 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 4</title>
     <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/task-04.css" />
   </head>
   <body>
-    <p><a href="index.html">Go back</a></p>
-
-    <form class="login-form">
-      <label>
-        Email
-        <input type="email" name="email" class="form-input" />
-      </label>
-      <label>
-        Password
-        <input type="password" name="password" class="form-input" />
-      </label>
-      <button type="submit">Log in</button>
-    </form>
+    <p><a class="return-link" href="index.html">Go back</a></p>
+    <div class="container form-container">
+      <form class="login-form">
+        <label>
+          <p>Email</p>
+          <input
+            type="email"
+            name="email"
+            class="form-input input-email"
+          />
+        </label>
+        <label>
+          <p>Password</p>
+          <input
+            type="password"
+            name="password"
+            class="form-input input-password"
+            
+          />
+        </label>
+        <button type="submit">Log in</button>
+      </form>
+    </div>
 
     <script src="./js/task-04.js" type="module"></script>
   </body>

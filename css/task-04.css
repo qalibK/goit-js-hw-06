@@ -1,0 +1,73 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form button {
+  width: 86px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #4e75ff;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  outline: none;
+  border: none;
+}
+
+.login-form label p {
+  margin-top: 0px;
+  margin-bottom: 8px;
+  color: #2e2f42;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+}
+
+.login-form label .form-input {
+    padding: 8px 16px;
+}
+
+.input-email {
+  margin-bottom: 8px;
+}
+
+.input-password {
+  margin-bottom: 16px;
+}
+
+.form-input {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  transition: border 0.5s;
+}
+
+.form-container {
+  width: min-content;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.form-input:focus {
+  outline: none;
+  border: 1px solid #000000;
+}
+
+.form-input:hover {
+  border: 1px solid #000000;
+}
+
+.form-input::placeholder {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+}

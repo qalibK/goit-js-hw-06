@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 3</title>
     <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/task-03.css" />
   </head>
   <body>
-    <p><a href="index.html">Go back</a></p>
-    
-    <input type="text" id="name-input" placeholder="Please enter your name" />
-    <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
-
+    <p><a class="return-link" href="index.html">Go back</a></p>
+    <div class="conatiner name-container">
+      <input
+        type="text"
+        id="name-input"
+        placeholder="Please enter your name"
+        class="name-input"
+      />
+      <h1 class="name-title">
+        Hello, <span id="name-output">Anonymous</span>!
+      </h1>
+    </div>
     <script src="./js/task-03.js" type="module"></script>
   </body>
 </html>
