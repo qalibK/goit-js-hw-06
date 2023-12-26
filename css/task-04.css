@@ -14,8 +14,12 @@
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
-  outline: none;
   border: none;
+  transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #6c8cff;
 }
 
 .login-form label p {
@@ -30,7 +34,7 @@
 }
 
 .login-form label .form-input {
-    padding: 8px 16px;
+  padding: 8px 16px;
 }
 
 .input-email {

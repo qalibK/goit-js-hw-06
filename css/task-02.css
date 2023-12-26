@@ -1,23 +1,18 @@
 ul.gallery {
   display: flex;
-  flex-wrap: wrap;
   list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
 
 ul.gallery li {
-  border-radius: 8px;
-  flex: 1 0 30%;
-  margin: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 ul.gallery img {
-  width: 100%;
-  height: auto;
+  width: 360px;
+  height: 300px;
   display: block;
-  border-radius: 8px;
-}
-
-ul.gallery img:first-child {
-  height: 100%;
 }
